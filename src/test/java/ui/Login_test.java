@@ -12,7 +12,7 @@ public class Login_test {
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver=new ChromeDriver();
 		driver.get("https://www.saucedemo.com/");
-		driver.findElement(By.id("user-name")).sendKeys("standard_user");
+		driver.findElement(By.xpath("//*[@id=\"user-name\"]")).sendKeys("standard_user");
 		Thread.sleep(4000);
 		driver.findElement(By.id("password")).sendKeys("secret_sauce");
 		Thread.sleep(4000);
